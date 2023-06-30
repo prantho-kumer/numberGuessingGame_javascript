@@ -1,0 +1,93 @@
+:root{
+--c-text: #073467;
+--c-bg: #ffbc36;
+--c-btn: #ea6d6d;
+}
+
+
+body{
+  font-family: sans-serif;
+  color: var(--c-text);
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.super_main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ background-image: linear-gradient(#073467ed,#073467f8),url(../images/numbg.png);
+  background-position: center center;
+  
+}
+
+.main{
+  text-align: center;
+ padding: 40px 100px;
+background-color: #ffbc36;
+/* background-color: var(--c-btn); */
+backdrop-filter: blur(5px);
+  border-radius: 7px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.main h1{
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.randomNumberAnimation{
+  color: var(--c-text);
+  font-size: 24px;
+}
+
+.main input{
+  font-size: 20px;
+
+  height: 50px;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  
+}
+
+#error{
+  font-weight: 700;
+  color: red;
+  text-align: left;
+}
+
+#gameResult{
+  color: green;
+}
+
+button{
+  font-weight: bold;
+  color: var(--c-text);
+  background-color: var(--c-btn);
+
+}
+
+
+.main button{
+  padding: 12px 48px;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.playerTwoInput, .playerTwoBtn,.startOver,.playerTwoInput_label{
+  display: none;
+}
